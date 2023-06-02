@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preferencias</title>
+	<link rel="stylesheet" type="text/css" href="estiloRegistro.css">
+</head>
+<body>
+	<form class="login2" action="action_page.php" method="post">
+		<fieldset>
+			<legend>Fechas de entrega y tiempos</legend>
+			Dia del mes en<br> el que recibes tus entregas:
+			<input type="number" name="entrega" min="1" max="29" autofocus required><br><br>
+			Tiempo de entrega:
+	        <select name="tiempo">
+		    <option value="normal">Entrega normal</option>
+		    <option value="rapida">Entrega rapida</option>
+	        </select><br><br>
+	        Metodo de envio:
+	        <select name="envio">
+		    <option value="dhl">DHL</option>
+		    <option value="estafeta">Estafeta</option>
+		    <option value="fedex">Fedex</option>
+	        </select>
+		</fieldset>
+		<fieldset>
+		<legend>Prerencias de compra</legend>
+		Lista de zapatos:
+		<select name="zapatos">
+			<option>Bota corta</option>
+			<option>Bota casual</option>
+			<option>Bota de vestir</option>
+			<option>Bota casual flexi</option>
+			<option>Bota tipo militar</option>
+			<option>Bota de descanso</option>
+		</select><br>
+		Maximo de compra de zapatos:
+		<input type="number" name="maximo" step="2" min="2" max="20" required>*<br><br>
+		Lista de pantalones:
+		<select name="pantalones">
+			<option>Pantalon casual gucci</option>
+			<option>Pantalon moderno supreme</option>
+			<option>Pantalon de mezclilla</option>
+			<option>Pantalon Luis Vuiton</option>
+			<option>Pantalon deportivo supreme</option>
+		</select><br>
+		Maximo de compra de pantalones:
+		<input type="number" name="maximo" step="2" min="2" max="20" required>*<br><br>
+		Lista de camisas:
+		<select name="camisas">
+			<option>Camisa casual gucci</option>
+			<option>Camisa formal Luis Vuiton</option>
+			<option>Camisa elegante Luis Vuiton</option>
+			<option>Camisa moderna supreme</option>
+		</select><br>
+		Maximo de compra de pantalones:
+		<input type="number" name="maximo" step="2" min="2" max="20" required>*<br><br>
+		<p style="font-size: 17px;color: white;">Las productos marcados con " * " solo se pueden seleccionar de 2 en 2 con un minimo de 2 y un maximo de 20</p><br><br>
+	    </fieldset>
+	    <textarea name="comentarios" placeholder="En esta seccion puedes escribir tus comentarios" rows="5" cols="66"></textarea>
+	    <br><br>
+		    <input style="margin-left: 105px;" class="animated" type="submit" value="Guardar" name="Enviar">
+		    <input style="margin-left: 105px;" class="animated" type="reset" name="Restablecer">
+		    <br><br>
+	    </form>
+</body>
+</html>

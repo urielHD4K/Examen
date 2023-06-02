@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro usuario</title>
+	<link rel="stylesheet" type="text/css" href="estiloRegistro.css">
+</head>
+<body>
+	<form class="login" action="action_page.php" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<input type="text" placeholder="Nombre" name="nombre" value="" size="20" maxlength="15" autofocus required>
+	        <input type="text" placeholder="Apellido paterno" name="AP" value="" size="15" maxlength="12" required>
+	        <input type="text" placeholder="Apellido Materno" name="AM" value="" size="15" maxlength="12" required>
+	        Fecha de nacimiento:
+	        <input type="date" name="bday" required><br><br>
+	        Sexo:<br>
+	        <input type="radio" name="genero" value="Masculino" checked required>Masculino<br>
+	        <input type="radio" name="genero" value="Femenino" required>Femenino<br>
+	        <input type="radio" name="genero" value="Otro" required>Otro<br>
+		</fieldset>
+		<fieldset>
+			<legend>Datos de residencia</legend>
+			<input type="text" placeholder="Calle y numero" name="callenum" required>
+			<input type="text" placeholder="Codigo postal" name="">
+			<input type="text" placeholder="Municipio" name="municipio" required>
+			<input type="text" placeholder="Estado" name="estado" required>
+		</fieldset>
+		<fieldset>
+			<legend>Datos de contacto</legend>
+			<input type="text" placeholder="Numero telefonico" name="tel" required>
+			<input type="email" placeholder="Correo electronico" name="email" autocomplete="off" required>
+		</fieldset>
+		<fieldset>
+			<legend>Creacion de contraseña</legend>
+	    <input type="password" placeholder="Contraseña" name="PWD" required><br>
+	    </fieldset>
+	    <br><br>
+	    <textarea name="comentarios" placeholder="En esta seccion puedes escribir tus comentarios" rows="5" cols="50">
+	    </textarea>
+	    <br><br>
+		    <input class="animated" type="submit" value="Guardar" name="Enviar">
+		    <input class="animated" type="reset" name="Restablecer">
+		    <br><br>
+		    <button><a href="preferencias.html">PREFERENCIAS</a></button>
+	</form>
+</body>
+</html>

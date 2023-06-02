@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ofertas</title>
+</head>
+<style>
+	table{
+		font-family: Arial;
+		border-collapse: collapse;
+		width: 100%
+	}
+	th, td{
+		border: 2px solid #dddddd;
+		text-align: left;
+		padding: 5px;
+	}
+	tr:nth-child(even){
+		background-color: tomato;
+	}
+	button{
+		font-family: Consolas;
+		background-color: white;
+		color: black;
+		border-radius: 5px;
+		font-size: 20px
+	}
+</style>
+<body style="background-color: black;color: white">
+	<script>
+		var can = 0;
+		function carrito(){
+			can++
+			document.getElementById("car").style.fontSize="25px";
+			if (can==1)
+			document.getElementById("car").innerHTML = can + " Producto agregado al carrito";
+		    else
+			document.getElementById("car").innerHTML = can + " Productos agregados al carrito";
+		    }
+	</script>
+	<table>
+		<tr>
+			<th>Producto</th>
+			<th>Precio unitario</th>
+			<th>Existencia</th>
+		</tr>
+		<tr>
+			<td>Tenis mike</td>
+			<td>$519</td>
+			<td>45</td>
+			<td style="text-align: center"><button onclick="carrito()">Agregar al carrito</button></td>
+		</tr>
+		<tr>
+			<td>Pantalon formal Luis Vuiton</td>
+			<td>$610</td>
+			<td>50</td>
+			<td style="text-align: center"><button  onclick="carrito()">Agregar al carrito</button></td>
+		</tr>
+		<tr>
+			<td>Camisa formal Luis Vuiton</td>
+			<td>$570</td>
+			<td>34</td>
+			<td style="text-align: center"><button  onclick="carrito()">Agregar al carrito</button></td>
+		</tr>
+		<tr>
+			<td>Camisa supreme</td>
+			<td>$1104</td>
+			<td>84</td>
+			<td style="text-align: center"><button  onclick="carrito()">Agregar al carrito</button></td>
+		</tr>
+	</table>
+	<p id="car"></p>
+</body>
+</html>
